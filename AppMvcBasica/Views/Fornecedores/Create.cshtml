@@ -1,10 +1,10 @@
 ﻿@model AppMvcBasica.Models.Fornecedor
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Criar";
 }
 
-<h1>Create</h1>
+<h1>@ViewData["Title"]</h1>
 
 <h4>Fornecedor</h4>
 <hr />
@@ -39,14 +39,14 @@
             <partial name="_Endereco"/>
 
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Criar" class="btn btn-success" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Voltar para Lista</a>
 </div>
 
 @section Scripts {
